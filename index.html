@@ -444,6 +444,28 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </div>
+
+        <div class="subscribe">
+          <form class="subscribe-form">
+            <p class="sbc-dscr">Subscribe</p>
+            <div class="scb-container">
+              <input
+                type="email"
+                class="sbc-input"
+                name="subscribe_email"
+                placeholder="E-mail"
+              />
+              <div class="scb-btn-wrapper">
+                <button type="submit" class="sbc-btn">
+                  Subscribe
+                  <svg class="icon-send" width="24" height="20">
+                    <use href="./images/sprite.svg#send"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -454,6 +476,84 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form class="contact-form">
+          <fieldset class="form-container">
+            <legend class="form-dscr">
+              Leave your contacts and we will call you back
+            </legend>
+            <label class="modal-form-field">
+              <span class="form-input-dscr">Name</span>
+              <span class="input-wrapper">
+                <input
+                  type="text"
+                  class="contact-form-input"
+                  name="user_name"
+                  required
+                  minlength="2"
+                  pattern="^[a-zA-Zа-яА-яіІїЇ]+$"
+                />
+                <svg class="modal-icon" width="12" height="12">
+                  <use href="./images/sprite.svg#name"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-form-field">
+              <span class="form-input-dscr">Phone</span>
+              <span class="input-wrapper">
+                <input
+                  type="tel"
+                  class="contact-form-input"
+                  name="user_phone"
+                  required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="xxx-xxx-xx-xx"
+                />
+                <svg class="modal-icon" width="13" height="13">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-form-field">
+              <span class="form-input-dscr">Email</span>
+              <span class="input-wrapper">
+                <input
+                  type="email"
+                  class="contact-form-input"
+                  name="user_email"
+                  required
+                />
+                <svg class="modal-icon" width="15" height="12">
+                  <use href="./images/sprite.svg#email"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-form-field">
+              <span class="form-input-dscr">Comment</span>
+              <textarea
+                name="user_message"
+                class="contact-form-msg"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </fieldset>
+          <div class="contact-form-fieldset">
+            <input
+              id="accept"
+              name="user_accept"
+              type="checkbox"
+              class="contact-form-checkbox visually-hidden"
+            />
+            <label for="accept" class="contact-form-dscr"
+              >I accept the terms and conditions of the&nbsp;
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <div class="contact-form-btn-wrapper">
+            <button type="submit" class="contact-form-btn">Send</button>
+          </div>
+        </form>
       </div>
     </div>
 
